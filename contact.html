@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./src/styles.css" />
+
+    <title>Contact</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header__left">
+          <a>
+            <img src="./assets/logo.png" />
+          </a>
+        </div>
+        <div class="header__right">
+          <ul>
+            <li><a href="">About Us</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="">Terms & Conditions</a></li>
+          </ul>
+        </div>
+
+        <!-- responsive -->
+        <div class="header__responsive">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <div class="header__responsive-drawer" id="reponsiveMenu">
+      <div style="display: flex; justify-content: flex-end; padding: 20px;"><i class="fa-solid fa-close" id="close"></i></div>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="">Terms & Conditions</a></li>
+      </ul>
+    </div>
+
+    <section class="sec__main" id="contact_main">
+      <div class="sec__main-top" id="contact__main-top">
+        <p>Last Updated On: <span>March, 18</span></p>
+      </div>
+
+      <div class="sec__main-middle">
+        <h1>Contact Us</h1>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="contact__container">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat:
+        </p>
+        <h4>youremail@gmail.com</h4>
+        <form action="">
+          <div class="contact__container-main">
+            <div class="contact__container-main-left">
+              <input type="text" placeholder="Name" />
+              <input type="text" placeholder="Surname" />
+              <input type="email" placeholder="E-mail" />
+            </div>
+            <textarea name="" id="" placeholder="Message"></textarea>
+          </div>
+        </form>
+        <div class="contact-btn">
+          <button id="contact-button">Send</button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer">
+        <ul>
+          <li><a href="">About Us</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <p>
+        Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam
+        luctus nisi ut lectus auctor et sollicitudin nunc posuere. Ut aliquet
+        scelerisque quam. Suspendisse quis neque eros malesuada fames ipsum
+        primis in faucibus luctus nisi ut lectus fames ipsum.
+      </p>
+    </footer>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>

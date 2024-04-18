@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Casino Hotels</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="header__left">
+          <a>
+            <img src="./assets/logo.png" />
+          </a>
+        </div>
+        <div class="header__right">
+          <ul>
+            <li><a href="">About Us</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="">Terms & Conditions</a></li>
+          </ul>
+        </div>
+
+        <!-- responsive -->
+        <div class="header__responsive">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <div class="header__responsive-drawer" id="reponsiveMenu">
+      <div style="display: flex; justify-content: flex-end; padding: 20px;"><i class="fa-solid fa-close" id="close"></i></div>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="">Terms & Conditions</a></li>
+      </ul>
+    </div>
+
+    <section class="sec__main">
+      <div class="sec__main-top">
+        <p>Last Updated On: <span>March, 18</span></p>
+      </div>
+
+      <div class="sec__main-middle">
+        <h1><span>Top 10</span> Casino Hotels Near You</h1>
+        <p>
+          Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam
+          scefƒflerisque quam ut tempus. Suspendisse quis neque eros. Quisque
+          luctus nisi ut lectus auctor et sollicitudin nunc posuere. Ut aliquet
+          tefllus ante, auctor et blandit lorem auctor justo dapibus vitae
+        </p>
+      </div>
+    </section>
+
+    <section class="sec__cards">
+      <div class="sec__cards-bg">
+        <div class="container">
+          <div class="box" id="cardBox"></div>
+
+          <div class="sec__cards-bottom">
+            <h3>Top Casino Hotels Near You</h3>
+            <p>
+              Interdum et malesuada fames ac ante ipsum primis in faucibus.
+              Aliquam luctus nisi ut lectus auctor et sollicitudin nunc posuere.
+              Ut aliquet scelerisque quam ut tempus. Suspendisse quis neque eros
+              malesuada fames ac ante ipsum primis in faucibus luctus nisi ut
+              lectus. malesuada fames ac ante ipsum primis in faucibus.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer">
+        <ul>
+          <li><a href="">About Us</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <p>
+        Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam
+        luctus nisi ut lectus auctor et sollicitudin nunc posuere. Ut aliquet
+        scelerisque quam. Suspendisse quis neque eros malesuada fames ipsum
+        primis in faucibus luctus nisi ut lectus fames ipsum.
+      </p>
+    </footer>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
