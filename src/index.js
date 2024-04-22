@@ -1,45 +1,54 @@
 let elements = [
   {
+    id: 1,
     name: "Lorem Ipsum Dolor",
     desc: "Interdum et malesuada fames ipsum primis faucibus. Aliquam luctus auctor posuere aliquet scelerisque sollicitudin posuere",
     img: "./assets/hotel.png",
   },
   {
+    id: 2,
     name: "Lorem Ipsum Dolor",
     desc: "Interdum et malesuada fames ipsum primis faucibus. Aliquam luctus auctor posuere aliquet scelerisque sollicitudin posuere",
     img: "./assets/hotel.png",
   },
   {
+    id: 3,
     name: "Lorem Ipsum Dolor",
     desc: "Interdum et malesuada fames ipsum primis faucibus. Aliquam luctus auctor posuere aliquet scelerisque sollicitudin posuere",
     img: "./assets/hotel.png",
   },
   {
+    id: 4,
     name: "Lorem Ipsum Dolor",
     desc: "Interdum et malesuada fames ipsum primis faucibus. Aliquam luctus auctor posuere aliquet scelerisque sollicitudin posuere",
     img: "./assets/hotel.png",
   },
   {
+    id: 5,
     name: "Lorem Ipsum Dolor",
     desc: "Interdum et malesuada fames ipsum primis faucibus. Aliquam luctus auctor posuere aliquet scelerisque sollicitudin posuere",
     img: "./assets/hotel.png",
   },
   {
+    id: 6,
     name: "Lorem Ipsum Dolor",
     desc: "Interdum et malesuada fames ipsum primis faucibus. Aliquam luctus auctor posuere aliquet scelerisque sollicitudin posuere",
     img: "./assets/hotel.png",
   },
   {
+    id: 7,
     name: "Lorem Ipsum Dolor",
     desc: "Interdum et malesuada fames ipsum primis faucibus. Aliquam luctus auctor posuere aliquet scelerisque sollicitudin posuere",
     img: "./assets/hotel.png",
   },
   {
+    id: 8,
     name: "Lorem Ipsum Dolor",
     desc: "Interdum et malesuada fames ipsum primis faucibus. Aliquam luctus auctor posuere aliquet scelerisque sollicitudin posuere",
     img: "./assets/hotel.png",
   },
   {
+    id: 9,
     name: "Lorem Ipsum Dolor",
     desc: "Interdum et malesuada fames ipsum primis faucibus. Aliquam luctus auctor posuere aliquet scelerisque sollicitudin posuere",
     img: "./assets/hotel.png",
@@ -56,10 +65,9 @@ bar.addEventListener("click", (e) => {
   // bar.style.display = "none"
 });
 
-closeIcon.addEventListener('click', (e) => {
+closeIcon.addEventListener("click", (e) => {
   reponsiveMenu.style.left = "-240px";
-
-})
+});
 
 function cardBoxElements() {
   let boxElements = "";
@@ -80,13 +88,26 @@ function cardBoxElements() {
           </span>
           <h4>${item.name}</h4>
           <p>${item.desc}</p>
-          <button>Read More</button>
+          <button id="readButton" data-page-id=${item.id}>Read More</button>
           </div>
         </div>
       </div>`;
   });
 
   box.innerHTML = boxElements;
+
+  
+  let readButton = document.querySelectorAll("#readButton");
+  console.log(readButton);
+  readButton.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      console.log(btn.getAttribute("data-page-id"));
+      window.location.href = `/review.html?id=${btn.getAttribute(
+        "data-page-id"
+      )}`;
+    });
+  });
+
 }
 
 cardBoxElements();
